@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/blackhole.png">
+    <script src="https://kit.fontawesome.com/f5e2391470.js" crossorigin="anonymous"></script>
+    <title>Space Page</title>
+</head>
+<body>
+    <header>
+        <p>This is header section. Usually includes intro/navigation. It is an example of semantic tag.</p>
+        <nav>
+            <ul>
+                <li>Link to another part of site (nav bar)</li>
+                <li>Link to another part of site</li>
+                <li>Link to another part of site(This is a <abbr title="List item">li</abbr> tag.)</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Basic Webpage(h1)</h1>
+    <h2>This is a subheading.(h2)</h2>
+    <br><p>There is a <br> '&lt;br&gt;' in this line of text</p>
+    <p>The current time, as of writing this, is <time>11:38:05</time>.</p>
+    <section>
+        <h2>Should include heading.</h2>
+        <figure>
+            <img src="img/space.png" alt="james webb tarantula nebula">
+        </figure>
+
+        <br>
+        <table>
+            <caption>You can also use rowspan/colspan to define a table that isn't a perfect grid. eg. rowspan=2 colspan=3</caption>
+            <tr>
+                <th>Col 1</th>
+                <th>Col 2</th>
+                <th>Col 3(th)</th>
+            </tr>
+            <tr>
+                <td>These</td>
+                <td>are</td>
+                <td>cells(td)</td>
+            </tr>
+            <tr>
+                <td>Found</td>
+                <td>in</td>
+                <td>rows(tr)</td>
+            </tr>
+            <tr>
+                <td>found</td>
+                <td>in</td>
+                <td>tables(table)</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <p>hr is a tag that inserts horizontal line, it is block tag.</p>
+    <section>
+        <h3>This is just another heading, for next section.</h3>
+        <p>Below is an example of <code>&lt;meter&gt;</code>, usually, it makes sense to have functionality provided by JS to make this dynamic. Could also use &lt;progress&gt; if it is certain to hit 100%.</p>
+        <meter min="0" max="100" value="50">50%</meter>
+        <p>This is a fancy icon from fontawesome, which is wrapped in an anchor tag.</p>
+        <a href="https://webb.nasa.gov/" aria-label="nasa" target="_blank"><i class="fa-brands fa-space-awesome"></i></a>
+        <br>
+        <p>It opens in a new tab, uses Aria to be more semantic and accessible to screen readers.</p>
+        <br>
+        <p>You can embed videos-even from youtube-via iframe and some attributes.</p>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1C_zuHf6lP4" title="YouTube video player"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+    <footer>This is the footer. <a href="https://www.flaticon.com/free-icons/space" title="space icons">Space icons created by Roundicons - Flaticon</a></footer>
+    <section>
+        <h4>This is the last section.</h4>
+        <details>
+            <summary>Summary</summary>
+            <p>This is a details tag. The summary is what is displayed as a title. This is a p tag inside, you can write anything.</p>
+        </details>
+    </section>
+
+</body>
+</html>
