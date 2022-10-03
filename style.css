@@ -1,0 +1,17 @@
+body {
+    color: hsl(250, 23%, 95%);
+    margin: 0 auto;
+    background: rgb(1, 23, 52);
+    background: linear-gradient(180deg, rgba(1, 23, 52, 1) 0%, rgba(6, 23, 78, 1) 35%, rgba(39, 1, 164, 1) 100%);
+}
+
+main {
+    margin:0 10%;
+    background-color: rgba(255, 255, 255, 0.212);
+}
+
+section {
+    display: inline-block;
+}
+
+
