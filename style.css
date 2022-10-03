@@ -14,4 +14,30 @@ section {
     display: inline-block;
 }
 
+header {
+    background-color: rgb(5, 1, 36);
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding:25px 0;
+}
+
+nav ul li {
+    list-style: none;
+    color: aliceblue;
+}
+
+nav ul li a:visited{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
 
