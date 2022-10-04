@@ -10,8 +10,39 @@ main {
     background-color: rgba(255, 255, 255, 0.212);
 }
 
-section {
-    display: inline-block;
+
+.section1 {
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+.section1 * {
+    border: 1px solid black;
+    margin: 4px;
+}
+
+.section2 {
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+.section2 * {
+    border: 1px solid black;
+    margin: 4px;
+}
+
+.section3 {
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+.section3 * {
+    border: 1px solid black;
+    margin: 4px;
+}
+
+table > * {
+    border: 1px white solid;
 }
 
 header {
