@@ -135,14 +135,13 @@ nav ul li {
     list-style: none;
     padding: 1rem;
 }
-
+a{
+    color: aliceblue;
+}
 a:hover {
     color: #08af7d;
 }
-nav ul li a:visited{
-    text-decoration: none;
-    color: aliceblue;  
-}
+
 footer {
     margin-top: 10px;
     padding: 20px 0;
