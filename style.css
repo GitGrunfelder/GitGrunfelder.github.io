@@ -13,12 +13,12 @@ body {
     min-width: 100vw;
 }
 header {
-    width: 100%;
+    min-width: 100vw;
 }
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    min-width: 100%;
     height: 4.5rem;
 }
 
