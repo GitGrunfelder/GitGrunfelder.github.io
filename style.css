@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 html {
     margin:0;
     scroll-behavior: smooth;
@@ -20,10 +24,11 @@ nav {
     top: 0;
     min-width: 100%;
     height: 4.5rem;
+    z-index: 4;
 }
 
 .navbar {
-    background-color: rgb(255, 190, 49);
+    background-color: #F5EAC4;
     margin: 0;
     display: flex;
     justify-content: end;
@@ -43,12 +48,12 @@ nav {
     height: 100%;
     display:block;
     padding: 1.5rem;
-    color: aliceblue;     
+    color: #BA145C;     
 }
 
 .links a:hover {
-    background-color: whitesmoke;
-    color: rgb(255, 190, 49);
+    background-color: #BA145C;
+    color: #F5EAC4;
     font-weight: bold;
 }
 
@@ -61,14 +66,15 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
-    background-color: rgb(59, 59, 61);
-    color:rgb(255, 190, 49);
+    background-color: #327792;
+    color:#092632;
 }
 #welcome-section h1 {
     margin: 0;
     font-size: 3rem;
-    color: whitesmoke;
+    color: #FBC912;
     padding: 1rem;
 }
 #welcome-section p {
@@ -78,9 +84,10 @@ nav {
 }
 
 #projects {
-    color: rgb(59, 59, 61);
+    color: #FBC912;
     text-align: center;
     padding-top: 95px;
+    background-color: #092632;
 }
 .project-grid {
     display: grid;
@@ -106,14 +113,16 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
-    color: aliceblue;
-    background-color: rgb(255, 190, 49);
+    color: #F5EAC4;
+    background-color: #327792;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #F5EAC4;
+    font-weight: 700;
 }
 
 .project-tile:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 1px 1px 3px #FBC912;
 }
 #contact {
     height: 80vh;
@@ -121,37 +130,90 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(59, 59, 61);
-    color: rgb(255, 190, 49);
+    background-color: #F5EAC4;
+    color: #BA145C;
     margin-top: -15px;
 }
 #contact h2 {
     font-size: 2.5rem;
-    color: whitesmoke;
+    color: #092632;
 }
 .contact {
     margin-top: 5rem;
 }
 .contact a{
     text-decoration: none;
-    color: rgb(255, 190, 49);
+    color: #092632;
     padding: 2rem;
     transition: all .3s ease-in-out;
 }
 .contact>a:hover {
-    color: whitesmoke;
+    color: #327792;
 }
 footer {
     width: 100%;
-    background-color: #333;
-    color: aliceblue;
+    background-color: #092632;
+    color: #F5EAC4;
     text-align: center;
     padding: 1.5rem;
 }
 
 @media screen and (max-width:630px) {
-    #welcome-section h1 {
-        text-align: center;
+
+    body {
+        top: 50px;
+        font-size: 17px;
     }
+
+
+    .project-grid img {
+
+        width: 100%;
+        object-fit: fill;
+        border-radius: 5px 5px 0 0;
+    }
+
+
+    #contact {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(59, 59, 61);
+        color: rgb(255, 190, 49);
+        margin-top: -15px;
+    }
+
+    #contact h2 {
+        font-size: 2.0rem;
+        color: whitesmoke;
+    }
+
+    .contact {
+        margin-top: 5rem;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: rgb(255, 190, 49);
+        padding: 2rem;
+        transition: all .3s ease-in-out;
+    }
+
+    .contact>a:hover {
+        color: whitesmoke;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #333;
+        color: aliceblue;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    /* div {
+        max-width: 100%;
+    } */
 }
 
